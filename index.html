@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> CSS GENERATOR </title>
+    <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d">
+        <link rel="apple-touch-icon image_src" href="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="h-100">
+    <div class="container-fluid h-100">
+        <div class="container h-100">
+            <div class="row  justify-content-center">
+                <div class="col-4 d-flex justify-content-center  ">
+                    <h1 class="text-center mt-2 d-inline-block" id="text" style="font-size: 40px;padding: 0px; 
+                padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;margin:0px;margin-right: 0px;margin-bottom: 0px;margin-top: 0px;margin-left: 0px;border-radius: 0px;border-top-left-radius: 0px;border-top-right-radius: 0px;
+                border-bottom-left-radius: 0px;border-bottom-right-radius: 0px;">SAMPLE</h1>
+                
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mt-3 d-flex justify-content-center">
+                    <div class="plus" id="plus">
+                        <button class="btn purple-gradient" onclick="plus()">
+                            <p class="p-0 m-0">+</p>
+                        </button>
+                    </div>
+                    <div class="display">
+                        <p class="p-0 m-0" id="display">
+                            40px
+                        </p>
+                    </div>
+                    <div class="minus" id="minus">
+                        <button class="btn purple-gradient" onclick="minus()">
+                            <p class="p-0 m-0">-</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col d-flex justify-content-center">
+                    <div class="bgred mr-3">
+                        <button class="btn purple-gradient" onclick="bgred()">
+                            <p class="p-0 m-0">R</p>
+                        </button>
+                    </div>
+
+                    <div class="bgred mr-3">
+                        <button class="btn purple-gradient" onclick="bggreen()">
+                            <p class="p-0 m-0">G</p>
+                        </button>
+                    </div>
+
+                    <div class="bgred mr-3">
+                        <button class="btn purple-gradient" onclick="bgblue()">
+                            <p class="p-0 m-0">B</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col d-flex justify-content-center">
+                    <div class="bgred mr-3">
+                        <button class="btn purple-gradient" onclick="textred()">
+                            <p class="p-0 m-0">R</p>
+                        </button>
+                    </div>
+
+                    <div class="bgred mr-3">
+                        <button class="btn purple-gradient" onclick="textgreen()">
+                            <p class="p-0 m-0">G</p>
+                        </button>
+                    </div>
+
+                    <div class="bgred mr-3">
+                        <button class="btn purple-gradient" onclick="textblue()">
+                            <p class="p-0 m-0">B</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-1">
+                <div class="col d-flex justify-content-center">
+                    <div class="mr-3">
+                        <button class="btn purple-gradient" onclick="pt()">
+                            <p class="p-0 m-0">PT</p>
+                        </button>
+                    </div>
+
+                    <div class=" mr-3">
+                        <button class="btn purple-gradient" onclick="pr()">
+                            <p class="p-0 m-0">PR</p>
+                        </button>
+                    </div>
+
+                    <div class="mr-3">
+                        <button class="btn purple-gradient" onclick="pb()">
+                            <p class="p-0 m-0">PB</p>
+                        </button>
+                    </div>
+
+                    <div class="mr-3">
+                        <button class="btn purple-gradient" onclick="pl()">
+                            <p class="p-0 m-0">PL</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col d-flex justify-content-center">
+
+                    <div class="">
+                        <button class="btn purple-gradient" onclick="pall()">
+                            <p class="p-0 m-0">P-ALL</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mt-1">
+                <div class="col d-flex justify-content-center">
+                    <div class="mr-3">
+                        <button class="btn purple-gradient" onclick="pt()">
+                            <p class="p-0 m-0">MT</p>
+                        </button>
+                    </div>
+
+                    <div class=" mr-3">
+                        <button class="btn purple-gradient" onclick="mr()">
+                            <p class="p-0 m-0">MR</p>
+                        </button>
+                    </div>
+
+                    <div class="mr-3">
+                        <button class="btn purple-gradient" onclick="mb()">
+                            <p class="p-0 m-0">MB</p>
+                        </button>
+                    </div>
+
+                    <div class="mr-3">
+                        <button class="btn purple-gradient" onclick="ml()">
+                            <p class="p-0 m-0">ML</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col d-flex justify-content-center">
+
+                    <div class="">
+                        <button class="btn purple-gradient" onclick="mall()">
+                            <p class="p-0 m-0">M-ALL</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mt-1">
+                <div class="col d-flex justify-content-center">
+                    <div class="mr-3">
+                        <button class="btn purple-gradient" onclick="btl()">
+                            <p class="p-0 m-0">BR-TL</p>
+                        </button>
+                    </div>
+
+                    <div class=" mr-3">
+                        <button class="btn purple-gradient" onclick="btr()">
+                            <p class="p-0 m-0">BR-TR</p>
+                        </button>
+                    </div>
+
+                    <div class="mr-3">
+                        <button class="btn purple-gradient" onclick="bbl()">
+                            <p class="p-0 m-0">BR-BL</p>
+                        </button>
+                    </div>
+
+                    <div class="mr-3">
+                        <button class="btn purple-gradient" onclick="bbr()">
+                            <p class="p-0 m-0">BR-BR</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col d-flex justify-content-center">
+
+                    <div class="">
+                        <button class="btn purple-gradient" onclick="ball()">
+                            <p class="p-0 m-0">BR-ALL</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.js"></script>
+    <script src="js/script.js">
+    </script>
+
+</body>
+
+</html>
